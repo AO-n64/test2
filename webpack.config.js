@@ -26,8 +26,23 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      }
+      },
+      {
+       test: /\.vue$/,
+       use: [
+         {
+           loader: 'vue-loader'
+         }
+       ]
+     }
     ]
+  },
+
+  resolve: {
+    extensions: ['.js', '.vue'],
+    alias: {
+      vue$: 'vue/dist/vue.esm.js',
+    },
   },
 
   // 開発サーバの設定
