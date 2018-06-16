@@ -1,0 +1,6 @@
+メモ
+
+lodash.js ... jsの便利関数を集めたやつ
+
+webpack ... タスクランナー
+webpack-dev-server ... 開発サーバーを立てるよう
