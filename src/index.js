@@ -4,13 +4,14 @@ import 'babel-polyfill'
 import Vue from 'vue'
 import './style/index.scss';
 
-var app4 = new Vue({
-  el: '#app-4',
+
+// BootstrapのJavaScript側の機能を読み込む
+import 'bootstrap';
+
+
+var app6 = new Vue({
+  el: '#app-6',
   data: {
-    todos: [
-      { text: 'Learn JavaScript' },
-      { text: 'Learn Vue' },
-      { text: 'Build something awesome' }
-    ]
+    message: 'Hello Vue!'
   }
 })

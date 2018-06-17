@@ -43,13 +43,8 @@ module.exports = {
         use: [
           // linkタグに出力する機能
           'style-loader',
-          // CSSをバンドルするための機能
-          {
-            loader: 'css-loader',
-          },
-          {
-            loader: 'sass-loader',
-          }
+          'css-loader',
+          'sass-loader',
         ],
       }
 
