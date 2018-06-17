@@ -2,5 +2,30 @@
 
 lodash.js ... jsの便利関数を集めたやつ
 
+dist -> distribution（配布物）or district(特定の場所)
+ビルド結果、公開用の物を置くところ
+
+dest -> destination(最終目標)
+フォルダの意味合いとしてはdistと同じ
+
+props:（プロパティ） -> クラス変数
+
+
+・webpack関連
+
 webpack ... タスクランナー
 webpack-dev-server ... 開発サーバーを立てるよう
+
+module.exports{}内で「watch: true」をすると
+変更があったとき自動でビルドしてくれるようになる
+
+けっこう、バージョンの違いでうごかないことがある。
+
+・vue.js
+
+Vueオブジェクトは次の3の要素を持っている
+el <- どのDOM要素と結びつくか
+data <- データ
+method <- メソッド
+
+Vue.jsではjs側でデータとメソッドを定義して置くことで、html上でjs的な操作ができるようになる

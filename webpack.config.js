@@ -7,6 +7,9 @@ module.exports = {
 
   devtool: 'source-map',
 
+  // watchモードを有効にする
+  watch: true,
+
   // メインとなるソースファイル
   entry: ['babel-polyfill', './src/index.js'],
 
@@ -34,7 +37,22 @@ module.exports = {
            loader: 'vue-loader'
          }
        ]
-     }
+     },
+     {
+        test: /\.scss/, // 対象となるファイルの拡張子
+        use: [
+          // linkタグに出力する機能
+          'style-loader',
+          // CSSをバンドルするための機能
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+          }
+        ],
+      }
+
     ]
   },
 
