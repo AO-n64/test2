@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>vue.jsテスト</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
@@ -34,7 +33,7 @@
     </div>
     <div class="navbar navbar-inverse bg-inverse">
       <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand">Album</a>
+        <a href="#" class="navbar-brand">Vue.js</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,11 +43,7 @@
     <section class="jumbotron text-center">
       <div class="container">
         <h1 class="jumbotron-heading">Vue.jsテスト</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary">Main call to action</a>
-          <a href="#" class="btn btn-secondary">Secondary action</a>
-        </p>
+        <p class="lead text-muted">Vue.jsを試してみるページ</p>
       </div>
     </section>
 
@@ -56,14 +51,12 @@
       <div class="container">
         <div class="row">
 
-          <div id="tresure" class="col-md-12 lead text-white mb-3">トレジャー</div>
-
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <div class="card-body">
                 <p class="card-heading lead">テスト1</p>
 
-                <div id="app-6">
+                <div id="app-1">
                   <p>{{ message }}</p>
                   <input v-model="message">
                 </div>
@@ -72,9 +65,41 @@
             </div>
           </div>
 
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <div class="card-body">
+                <p class="card-heading lead">テスト2</p>
+
+                <div id="app-2">
+                  <button-counter></button-counter>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <div class="card-body">
+                <p class="card-heading lead">テスト3</p>
+
+                <div id="app-3">
+                  <test-component title="タイトル"></test-component>
+                  <test-component title="タイトル2"></test-component>
+                  <test-component title="タイトル3"></test-component>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
+
+
+
+  <button-counter></button-counter>
 
   <footer class="text-muted">
     <div class="container">

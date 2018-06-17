@@ -5,8 +5,6 @@ module.exports = {
   // development に設定するとソースマップ有効でJSファイルが出力される
   mode: 'development',
 
-  devtool: 'source-map',
-
   // watchモードを有効にする
   watch: true,
 
