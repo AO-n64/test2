@@ -29,3 +29,25 @@ data <- データ
 method <- メソッド
 
 Vue.jsではjs側でデータとメソッドを定義して置くことで、html上でjs的な操作ができるようになる
+
+
+Vue.jsの基本
+
+MVVM
+[View]
+<div id="my_view">
+</div>
+
+[Model]
+var myModel = {
+  name: "Ashley",
+  age: 24
+};
+
+[View-Model] <- Vue
+var myViewModel = new Vue({
+  el: '#my_view',
+  data: myModel
+});
+
+双方向バインディング
