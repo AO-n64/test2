@@ -51,60 +51,29 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body">
-                <p class="card-heading lead">テスト1</p>
+          <div id="app-1"></div>
+          <div id="app-2"></div>
+          <div id="app-3"></div>
+          <div id="app-4"></div>
+          <div id="app-5"></div>
 
-                <div id="app-1">
-                  <p>{{ message }}</p>
-                  <input v-model="message">
-                </div>
-
-              </div>
-            </div>
+          <div class="image-viewer">
+            <image-viewer></image-viewer>
           </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body">
-                <p class="card-heading lead">テスト2</p>
-
-                <div id="app-2">
-                  <button v-on:click = "countup">You clicked me {{ count }} times.</button>
-                </div>
-
-              </div>
-            </div>
+          <div class="image-viewer">
+            <image-viewer></image-viewer>
           </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body">
-                <p class="card-heading lead">テスト3</p>
-
-                <div id="app-3">
-                  <test-component title="タイトル"></test-component>
-                  <test-component title="タイトル2"></test-component>
-                  <test-component title="タイトル3"></test-component>
-                </div>
-
-              </div>
-            </div>
+          <div class="image-viewer">
+            <image-viewer></image-viewer>
           </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body">
-                <p class="card-heading lead">テスト4</p>
-
-                <div id="app-4">
-                  <p>{{ num }}</p>
-                </div>
-
-              </div>
-            </div>
+          <div class="image-viewer">
+            <image-viewer></image-viewer>
           </div>
+          
+
+
+
+
 
         </div>
       </div>

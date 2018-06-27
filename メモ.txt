@@ -44,10 +44,22 @@ var myModel = {
   age: 24
 };
 
-[View-Model] <- Vue
+[View-Model]
 var myViewModel = new Vue({
   el: '#my_view',
   data: myModel
 });
 
-双方向バインディング
+双方向バインディング（テスト1）
+
+イベント登録（テスト2）
+・v-
+
+コンポーネント（テスト3）
+ オブジェクトの再利用
+
+
+
+作りたいもの
+・スライドショー的に画像が切り替わるサイト
+時間でVueの中身が切り替わっていく（表示モデルが切り替わる）
